@@ -61,7 +61,7 @@
 			<div id="stage_1">
 				<div class="row">
 					<div class="col-sm-6 col-sm-push-6">
-						<h2>1. Discovery Questionnaire</h2>
+						<h2><span>1.</span> Discovery Questionnaire</h2>
 						<p>
 							<?php the_field( 'discovery_questionnaire' ); ?>
 						</p>
@@ -75,13 +75,13 @@
 			<div id="stage_2">
 				<div class="row">
 					<div class="col-sm-6">
-						<h2>2. Pre-design Consultation</h2>
+						<h2><span>2.</span> Pre-design Consultation</h2>
 						<p>
 							<?php the_field( 'pre-design_consultation' ); ?>
 						</p>
 					</div>
 					<div class="col-sm-6">
-						<img src="<?php the_field( 'pre-design_image' ); ?>">
+						<img class="shadow_subtle" src="<?php the_field( 'pre-design_image' ); ?>">
 					</div>
 				</div>
 			</div>
@@ -89,13 +89,17 @@
 			<div id="stage_3">
 				<div class="row">
 					<div class="col-sm-6 col-sm-push-6">
-						<h2>3. Design Mock-ups</h2>
-						<p>
-							<?php the_field( 'design_mock-ups' ); ?>
-						</p>
+						<div class="stageInfo">
+							<h2><span>3.</span> Design Mock-ups</h2>
+							<p>
+								<?php the_field( 'design_mock-ups' ); ?>
+							</p>
+						</div>
 					</div>
 					<div class="col-sm-6 col-sm-pull-6">
-						<img src="<?php the_field( 'design_mock-ups_image' ); ?>">
+						<div class="stageInfo">
+							<img src="<?php the_field( 'design_mock-ups_image' ); ?>">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -103,7 +107,7 @@
 			<div id="stage_4">
 				<div class="row">
 					<div class="col-sm-6">
-						<h2>4. Website Development</h2>
+						<h2><span>4.</span> Website Development</h2>
 						<p>
 							<?php the_field( 'website_development' ); ?>
 						</p>
@@ -117,7 +121,8 @@
 			<div id="stage_5">
 				<div class="row">
 					<div class="col-sm-6 col-sm-push-6">
-						<h2>5. Quality Assurance &amp; Launch…&amp; Quality Assurance again</h2>
+						<h2><span>5.</span> Quality Assurance &amp; Launch</h2>
+						<h3>...&amp; Quality Assurance again</h3>
 						<p>
 							<?php the_field( 'quality_assurance' ); ?>
 						</p>

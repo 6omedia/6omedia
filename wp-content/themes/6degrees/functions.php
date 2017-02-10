@@ -10,13 +10,15 @@ function wpMss_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'wpMss_excerpt_length', 999 );
 
-function register_theme_menus() {
+function register_theme_menus(){
 	
 	register_nav_menus(
 		array(
 			'main_nav' => __( 'Main Menu' ),
 			'page_nav' => __( 'Page Nav' ),
 			'page_mob_nav' => __( 'Page Mobile Nav' ),
+			'side_nav' => __( 'Side Nav' ),
+			'solutions_nav' => __( 'Solutions Nav' ),
 			'footer-menu' =>__( 'Footer Menu' )
 		)
 	);

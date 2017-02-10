@@ -17,7 +17,7 @@
 	<div class="banner">
 		<div class="container">
 			<h2>Attract More Prospective Clients to your Website</h2>
-			<img src="<?php bloginfo('template_directory'); ?>/img/seo-halesowen.png">
+			<img src="<?php bloginfo('template_directory'); ?>/img/Digital_Marketing.png">
 		</div>
 	</div>
 
@@ -61,7 +61,7 @@
 			<div id="stage_1">
 				<div class="row">
 					<div class="col-sm-6 col-sm-push-6">
-						<h2>1. Audit &amp; Discovery</h2>
+						<h2><span>1.</span> Audit &amp; Discovery</h2>
 						<p>
 							<?php the_field( 'discovery' ); ?>
 						</p>
@@ -74,7 +74,7 @@
 			<div id="stage_2">
 				<div class="row">
 					<div class="col-sm-6">
-						<h2>2. On-Site SEO</h2>
+						<h2><span>2.</span> On-Site SEO</h2>
 						<p>
 							<?php the_field( 'on-site-seo' ); ?>
 						</p>
@@ -87,20 +87,20 @@
 			<div id="stage_3">
 				<div class="row">
 					<div class="col-sm-6 col-sm-push-6">
-						<h2>3. Off-Site SEO</h2>
+						<h2><span>3.</span> Off-Site SEO</h2>
 						<p>
 							<?php the_field( 'off-site_seo' ); ?>
 						</p>
 					</div>
 					<div class="col-sm-6 col-sm-pull-6">
-						<img src="<?php the_field( 'off-site_seo_image' ); ?>">
+						<img class="seoImg" src="<?php the_field( 'off-site_seo_image' ); ?>">
 					</div>
 				</div>
 			</div>
 			<div id="stage_4">
 				<div class="row">
 					<div class="col-sm-6">
-						<h2>4. Content Marketing &amp; Social</h2>
+						<h2><span>4.</span> Content Marketing &amp; Social</h2>
 						<p>
 							<?php the_field( 'content_marketing' ); ?>
 						</p>
@@ -113,7 +113,7 @@
 			<div id="stage_5">
 				<div class="row">
 					<div class="col-sm-6 col-sm-push-6">
-						<h2>5. Pay-Per-Click Marketing (PPC)</h2>
+						<h2><span>5.</span> Pay-Per-Click Marketing</h2>
 						<p>
 							<?php the_field( 'ppc' ); ?>
 						</p>

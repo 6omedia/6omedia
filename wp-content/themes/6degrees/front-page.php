@@ -1,68 +1,205 @@
 
 <?php get_header(); ?>
 
-	<div id="hero">
-				<!-- NAVIGATION -->
-				<div class="container-fluid">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div id="home_nav">
-								<ul class="list">
-										<li class="hidden-xs"><a href="#services">SERVICES</a></li>
-										<li class="hidden-xs"><a href="#our-work">OUR WORK</a></li>
-										<li><span>6°</span></li>
-										<li class="hidden-xs"><a href="#our-team">TEAM</a></li>
-										<li class="hidden-xs"><a href="#contact">GET IN TOUCH</a></li>
-								</ul>
-						</div>
+	<!-- <div class="fullscreen-bg">
+	    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+	        <source src="<?php // bloginfo('template_directory'); ?>/videos/home.mp4" type="video/mp4">
+	    </video>
+	</div> -->
 
-						<img id="burger" src="<?php bloginfo('template_directory'); ?>/img/burger.png" class="visible-xs">
+	<div class="mob_bar visible-xs">
+		<img class="logo" src="<?php bloginfo('template_directory'); ?>/img/6dmedia_logo_circle.png" alt="6degrees Media Logo">
+		<img id="burger" src="<?php bloginfo('template_directory'); ?>/img/burger.png" class="visible-xs">
+	</div>
 
-						<ul id="mobNav" class="list">
-								<li><a href="#services">SERVICES</a></li>
-								<li><a href="#our-work">OUR WORK</a></li>
-								<li><a href="#our-team">TEAM</a></li>
-								<li><a href="#contact">GET IN TOUCH</a></li>
-						</ul>
-				</div><!-- end navigation -->
+	<ul id="mobNav" class="list">
+		<li><a href="#services">SERVICES</a></li>
+		<li><a href="#our-work">OUR WORK</a></li>
+		<li><a href="#our-team">TEAM</a></li>
+		<li><a href="#contact">GET IN TOUCH</a></li>
+	</ul>
 
-				<div class="container">
-					<p class="hi">Hello!</p>
-					<span class="we_are">we're a UK digital &amp; creative agency based in London</span>
-					<h1 id="services">what shall we help you with?</h1>
-					<p class="ineed">I NEED TO</p>
+	<div id="heroVideo">
+		<video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+		    <!-- <source src="polina.webm" type="video/webm"> -->
+		    <source src="<?php bloginfo('template_directory'); ?>/videos/home.mp4" type="video/mp4">
+		</video>
 
-					<?php
-										
-							$defaults = array(
-									'container' => false,
-									'theme_location' => 'main_nav',
-									'menu_id' => 'main_nav',
-									'menu_class' => 'list'
-							);
-							
-							wp_nav_menu( $defaults );
-					
-					?>
-
-					<!-- <ul id="main_nav" class="list">
-						<li class="hvr-shutter-out-horizontal"><a href="">BUILD MY BRAND</a></li>
-						<li class="hvr-shutter-out-horizontal"><a href="">LAUNCH A WEBSITE</a></li>
-						<li class="hvr-shutter-out-horizontal"><a href="">INCREASE CUSTOMERS</a></li>
-						<li class="hvr-shutter-out-horizontal"><a href="">MAKE MORE SALES</a></li>
-					</ul> -->
-				</div>
+		<div id="centerBlock">
+			<img id="logo" class="hidden-xs" src="<?php bloginfo('template_directory'); ?>/img/6dmedia_logo_circle.png" alt="6degrees Media Logo">
+			<p class="hi">Hello!</p>
+			<span>we're a UK digital &amp; creative agency based in London</span>
+			<h1 id="services">what shall we help you with?</h1>
 		</div>
 
-		<div class="container-fluid services">
-				<!-- OUR WORK -->
+		<a href="#home_page">
+			<img class="hidden-xs" id="more_arrow" src="<?php bloginfo('template_directory'); ?>/img/more_arrow.png" alt="6degrees Media Logo">
+		</a>
+	</div>
+
+	<div id="home_page">
+
+		<?php include('red_sidebar.php'); ?>
+		
+		<div class="theBlocks">
+			<h1>Services</h1>
+			<a href="<?php echo home_url(); ?>/law-firms">
+				<div class="block" id="block_wd">
+					<h2>Web Design</h2>
+				</div>
+			</a>
+			<a href="<?php echo home_url(); ?>/law-marketing#stage_2">
+				<div class="block" id="block_onseo">
+					<h2>On-Site SEO</h2>
+				</div>
+			</a>
+			<a href="<?php echo home_url(); ?>/law-marketing#stage_3">
+				<div class="block" id="block_offseo">
+					<h2>Off-Site SEO</h2>
+				</div>
+			</a>
+			<a href="<?php echo home_url(); ?>/law-marketing#stage_4">
+				<div class="block" id="block_cm">
+					<h2>Content Marketing</h2>
+				</div>
+			</a>
+			<a href="<?php echo home_url(); ?>/law-marketing#stage_4">
+				<div class="block" id="block_social">
+					<h2>Social Media</h2>
+				</div>
+			</a>
+			<a href="<?php echo home_url(); ?>/law-marketing#stage_5">
+				<div class="block" id="block_paid">
+					<h2>Paid Media</h2>
+				</div>
+			</a>
+			<h1>Work</h1>
+			<a href="<?php echo home_url(); ?>/work#workitem_0">
+				<div class="block">
+					<img class="bg" src="<?php bloginfo('template_directory'); ?>/img/makeup.jpg" alt="">
+					<div class="logo1 workLogo"></div>
+				</div>
+			</a>
+			<a href="<?php echo home_url(); ?>/work#workitem_1">
+				<div class="block">
+					<img class="bg" src="<?php bloginfo('template_directory'); ?>/img/kiteboarding.png" alt="">
+					<div class="logo2 workLogo"></div>
+				</div>
+			</a>
+			<a href="<?php echo home_url(); ?>/work#workitem_3">
+				<div class="block">
+					<img class="bg" src="<?php bloginfo('template_directory'); ?>/img/tristar_bg.jpg" alt="">
+					<div class="logo3 workLogo"></div>
+				</div>
+			</a>
+			<a href="">
+				<div class="block">
+					<img class="bg" src="<?php bloginfo('template_directory'); ?>/img/limo_bg.jpg" alt="">
+					<div class="logo5 workLogo"></div>
+				</div>
+			</a>
+			<a href="<?php echo home_url(); ?>/work#workitem_4">
+				<div class="block">
+					<img class="bg" src="<?php bloginfo('template_directory'); ?>/img/acu.jpg" alt="">
+					<div class="logo4 workLogo"></div>
+				</div>
+			</a>
+			<a href="">
+				<div class="block">
+					<img class="bg" src="<?php bloginfo('template_directory'); ?>/img/makeup.jpg" alt="">
+					<div class="logo6 workLogo"></div>
+				</div>
+			</a>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 	<div id="hero">
+		<div class="container-fluid">
+			
+			<div id="home_nav">
+				<ul class="list">
+						<li class="hidden-xs"><a href="#services">SERVICES</a></li>
+						<li class="hidden-xs"><a href="#our-work">OUR WORK</a></li>
+						<li><span>6°</span></li>
+						<li class="hidden-xs"><a href="#our-team">TEAM</a></li>
+						<li class="hidden-xs"><a href="#contact">GET IN TOUCH</a></li>
+				</ul>
+			</div>
+
+			<img id="burger" src="<?php // bloginfo('template_directory'); ?>/img/burger.png" class="visible-xs">
+
+			<ul id="mobNav" class="list">
+				<li><a href="#services">SERVICES</a></li>
+				<li><a href="#our-work">OUR WORK</a></li>
+				<li><a href="#our-team">TEAM</a></li>
+				<li><a href="#contact">GET IN TOUCH</a></li>
+			</ul>
+
+		</div>
+		<div class="container">
+			<p class="hi">Hello!</p>
+			<span class="we_are">we're a UK digital &amp; creative agency based in London</span>
+			<h1 id="services">what shall we help you with?</h1>
+			<p class="ineed">I NEED TO</p>
+
+			<?php
+								
+				// $defaults = array(
+				// 	'container' => false,
+				// 	'theme_location' => 'main_nav',
+				// 	'menu_id' => 'main_nav',
+				// 	'menu_class' => 'list'
+				// );
+				
+				// wp_nav_menu( $defaults );
+		
+			?>
+		</div>
+	</div> -->
+
+		<!-- <div class="container-fluid services">
+				
 				<div id="our-work" class="row">
 						<h2>PEOPLE WHO LOVE OUR WORK</h2>
-						<img src="<?php bloginfo('template_directory'); ?>/img/portfolio.png" class="img-responsive">
+						<ul class="list" id="logos">
+							<li><a href=""><img src="<?php // bloginfo('template_directory'); ?>/img/logo1.png" class="img-responsive"></a></li>
+							<li><a href=""><img src="<?php // bloginfo('template_directory'); ?>/img/logo2.png" class="img-responsive"></a></li>
+							<li><a href=""><img src="<?php // bloginfo('template_directory'); ?>/img/logo3.png" class="img-responsive"></a></li>
+							<li><a href=""><img src="<?php // bloginfo('template_directory'); ?>/img/logo4.png" class="img-responsive"></a></li>
+							<li><a href=""><img src="<?php // bloginfo('template_directory'); ?>/img/logo5.png" class="img-responsive"></a></li>
+							<li><a href=""><img src="<?php // bloginfo('template_directory'); ?>/img/logo6.png" class="img-responsive"></a></li>
+						</ul>
+						<img src="<?php // bloginfo('template_directory'); ?>/img/portfolio.png" class="img-responsive">
 						<p class="back-to-top-red"><a href="#top">BACK TO TOP</a></p>
 				</div>
-		</div>
+		</div> -->
 
-		<div id="our-team" class="alt-bg">
+		<!-- <div id="our-team" class="alt-bg">
 				<h2>MEET THE TEAM</h2>
 				
 				<div class="col-sm-6 col-md-6 col-xs-12">
@@ -72,22 +209,22 @@
 									<p>Our left-brain thinkers love to handcraft code &amp; develop clever engineering for powerful ROI driving websites.</p>
 							</div>
 							<div class="hidden-xs col-sm-3">
-									<img src="<?php bloginfo('template_directory'); ?>/img/brain_left-md.png" class="img-responsive pull-right">
+									<img src="<?php // bloginfo('template_directory'); ?>/img/brain_left-md.png" class="img-responsive pull-right">
 							</div>
 					</div>
 					<div class="teamImgs">
 							<div class="row">
 									<div class="col-sm-3 col-xs-6">
-										<img src="<?php bloginfo('template_directory'); ?>/img/team-sigley.png" class="img-responsive img-circle"/>
+										<img src="<?php // bloginfo('template_directory'); ?>/img/team-sigley.png" class="img-responsive img-circle"/>
 									</div>
 									<div class="col-sm-3 col-xs-6">
-										<img src="<?php bloginfo('template_directory'); ?>/img/team-chris.png" class="img-responsive img-circle"/>
+										<img src="<?php // bloginfo('template_directory'); ?>/img/team-chris.png" class="img-responsive img-circle"/>
 									</div>
 									<div class="col-sm-3 col-xs-6">
-										<img src="<?php bloginfo('template_directory'); ?>/img/team-tom.png" class="img-responsive img-circle"/>
+										<img src="<?php // bloginfo('template_directory'); ?>/img/team-tom.png" class="img-responsive img-circle"/>
 									</div>
 									<div class="col-sm-3 col-xs-6">
-										<img src="<?php bloginfo('template_directory'); ?>/img/team-jason.png" class="img-responsive img-circle"/>
+										<img src="<?php // bloginfo('template_directory'); ?>/img/team-jason.png" class="img-responsive img-circle"/>
 									</div>
 							</div>
 						</div>
@@ -95,7 +232,7 @@
 				<div class="col-sm-6 col-md-6 col-xs-12">
 					<div class="row">
 							<div class="hidden-xs col-sm-3">
-									<img src="<?php bloginfo('template_directory'); ?>/img/brain_right-md.png" class="img-responsive pull-left">
+									<img src="<?php // bloginfo('template_directory'); ?>/img/brain_right-md.png" class="img-responsive pull-left">
 							</div>
 							<div class="col-md-9 creative">
 									<i class="fa fa-lightbulb-o fa-2x"></i>&nbsp;&nbsp;<span class="team-type">Creativity</span>
@@ -105,24 +242,24 @@
 					<div class="teamImgs">
 						<div class="row">
 								<div class="col-sm-3 col-xs-6">
-										<img src="<?php bloginfo('template_directory'); ?>/img/team-maz.png" class="img-responsive img-circle"/>
+										<img src="<?php // bloginfo('template_directory'); ?>/img/team-maz.png" class="img-responsive img-circle"/>
 								</div>
 								<div class="col-sm-3 col-xs-6">
-										<img src="<?php bloginfo('template_directory'); ?>/img/team-henry.png" class="img-responsive img-circle"/>
+										<img src="<?php // bloginfo('template_directory'); ?>/img/team-henry.png" class="img-responsive img-circle"/>
 								</div>
 								<div class="col-sm-3 col-xs-6">
-										<img src="<?php bloginfo('template_directory'); ?>/img/team-gary.png" class="img-responsive img-circle"/>
+										<img src="<?php // bloginfo('template_directory'); ?>/img/team-gary.png" class="img-responsive img-circle"/>
 								</div>
 								<div class="col-sm-3 col-xs-6">
-										<img src="<?php bloginfo('template_directory'); ?>/img/team-success.png" class="img-responsive img-circle"/>
+										<img src="<?php // bloginfo('template_directory'); ?>/img/team-success.png" class="img-responsive img-circle"/>
 								</div>
 							</div>
 					</div>
 			</div>
 				<p class="back-to-top-grey"><a href="#top">BACK TO TOP</a></p>
-		</div>   
+		</div>    -->
 
-		<div id="lets-talk">
+		<!-- <div id="lets-talk">
 			<div class="container">
 				<h2>LET'S TALK</h2>
 				<p>
@@ -140,7 +277,7 @@
 				</div>
 				<p class="back-to-top-red"><a href="#top">BACK TO TOP</a></p>
 			</div>
-		</div>
+		</div> -->
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<script>
@@ -165,6 +302,7 @@
 				var burger = $('#burger');
 				var mobNav = $('#mobNav');
 				var open = false;
+				var spin = $('#spin');
 
 				burger.on('click', function(){
 					
@@ -194,12 +332,14 @@
 
 				function sendEmail(name, email, contact){
 
-					errorMsg.html('');
+					$(errorMsg).html('');
 					spin.css('display', 'inline-block');
-					sendBtn.css('display', 'none');
+					submit.css('display', 'none');
 
 					$.ajax({
-						url: '../wp-content/themes/6degrees/send_contact_form.php',
+						// live
+						// url: '../wp-6degrees/themes/6degrees/send_contact_form.php',
+						url: '../wp-6degrees/wp-content/themes/6degrees/send_contact_form.php',
 						type: 'POST',
 						//dataType: 'json',
 						data:
@@ -221,7 +361,7 @@
 
 							$('#errorMsg').html(response);
 							spin.css('display', 'none');
-							sendBtn.css('display', 'inline-block');
+							submit.css('display', 'inline-block');
 
 						},
 						error: function(xhr, desc, err)
@@ -277,6 +417,7 @@
 				}
 
 			});
+
 		</script>
 
 <?php get_footer(); ?>

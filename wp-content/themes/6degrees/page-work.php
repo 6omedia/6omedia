@@ -40,25 +40,29 @@
 				?>
 
 				<div class="col-sm-6">
-					<a href="<?php the_permalink(); ?>">
-						<div class="work_item">
+					<!-- <a href="<?php // the_permalink(); ?>"> -->
+						<div class="work_item" id="<?php echo 'workitem_' . $count; ?>">
 
 							<h2><?php the_title(); ?></h2>
 							<?php the_post_thumbnail(); ?>
 							
-							<table class="hidden-xs">
+							<!-- <table class="hidden-xs">
 								<tr>
 									<th>Goal: </th>
-									<td><?php the_field( 'short_goal' ); ?></td>
+									<td><?php // the_field( 'short_goal' ); ?></td>
 								</tr>
 								<tr>
 									<th>Results: </th>
-									<td><?php the_field( 'short_result' ); ?></td>
+									<td><?php // the_field( 'short_result' ); ?></td>
 								</tr>
-							</table>
+								<tr>
+									<th>Services: </th>
+									<td><?php // the_field( 'approach' ); ?></td>
+								</tr>
+							</table> -->
 
 						</div>
-					</a>	
+					<!-- </a> -->	
 				</div>
 
 				<?php

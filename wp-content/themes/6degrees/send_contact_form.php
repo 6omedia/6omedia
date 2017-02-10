@@ -12,14 +12,16 @@ $bodyMsg = 'Name: ' . $name . "\r\n" .
 
 // Send email
 
-//$smtp_server = "mail.addoeducation.co.uk";
-//$username = "mail@addoeducation.co.uk";
-//$password = "nXtM$QYHR&4>4";
+// $smtp_server = "mail.addoeducation.co.uk";
+// $username = "mail@addoeducation.co.uk";
+// $password = "nXtM$QYHR&4>4";
 
 //$from = ['mail@addoeducation.co.uk' => 'Addo Education'];
 //$test1 = ['hello@addoeducation.co.uk' => 'Addo Education'];
 
-require_once('config.php');
+//$to = ['hello@6omedia.com' => '6 Degrees Media'];
+
+// require_once('config.php');
 
 try {
 

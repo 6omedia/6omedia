@@ -1,3 +1,6 @@
+   
+    <?php if(!is_front_page() && !is_page('lead-sites') ){ ?>
+
     <footer>
         <div class="container">
             <div class="col-md-5 col-xs-12">
@@ -17,6 +20,8 @@
             </div>
         </div>
     </footer>
+
+    <?php } ?>
 
     <?php wp_footer(); ?>
 
